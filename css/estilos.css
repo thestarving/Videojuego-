@@ -1,0 +1,88 @@
+
+
+.menu{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#video {
+}
+
+.logo {
+    width: 100px;
+}
+
+.movile {
+    width: 300px;
+    display: block;
+    margin: auto;
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+.azami {
+    width: 550px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.text1 {
+    text-align: center;
+}
+
+
+.divi1 {
+    width: 250px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 10px;
+
+}
+.divitittle1 {
+    
+}
+.divi2 {
+    width: 250px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 10px;
+}
+.divi3 {
+    width: 250px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 10px;
+}
+.textinfo {
+    margin-block-start: auto;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.main-a {
+    
+    background-color: rgba(0, 35, 69, 0.9);
+}
+
+/*body {
+    background-color: rgba(0, 35, 69, 0.5);
+    
+}*/
+
+.azamibutton {
+    content: "";
+    position: absolute;
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+}
