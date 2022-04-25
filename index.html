@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar  navbar-expand-lg navbar-dark menu fixed-top">
+        <nav class="navbar  navbar-expand-lg navbar-dark menu fixed-top" id="menu">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html"><img src="Assets/img/logo.webp" alt="" class="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,10 +19,22 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Rainbow</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link active" aria-current="page" href="#">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Info del Juego</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Biblioteca Musical</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Acerca de</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -35,14 +47,7 @@
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
               </div>
             </div>
           </nav>
@@ -56,12 +61,12 @@
     <section class="home">
         <div class="container mt-5 mb-5">
             <div class=" row">
-                <div class="col-6">
+                <div class="col-12 col-md-6 aling self center" id="demonveil">
                     <h2>DEMON VEIL</h2>
                     <p class="text1">Rainbow Six Siege presenta la primera temporada del Año 7, Demon Veil. Con ella viene Azami, una nueva defensora japonesa, un mapa totalmente nuevo*, el modo de juego permanente Combate a muerte por equipos, etc. Azami puede bloquear líneas de visión y puntos de entrada, y además crea nuevos ángulos de defensa. Todo con un solo giro de muñeca. *A mitad de la temporada.</p>
                     <button type="button" class="btn btn-primary center">VER LAS NOTICIAS SOBRE LA ACTUALIZACIÓN</button>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6 aling self center" id="rainbowmovile">
                     <h2>RAINBOW SIX MOVILE</h2>
                     <img class="movile " src="Assets/img/r6m_sidepromo_movile.webp" alt="">
                     <button type="button" class="btn btn-primary center">REGISTRARSE</button>
@@ -74,7 +79,7 @@
     <section class="home">
         <div class="container fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-md-6 aling self center">
                     <h2>DESTACADOS</h2>
                     <div>
                         <img class="azami w-100 img-fluid" src="Assets/img/r6s-azami.webp" alt="">
@@ -83,7 +88,7 @@
                         <button type="button" class="btn btn-primary">SABER MÁS</button>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6 aling self center">
                     <h2>ÚLTIMAS NOTICIAS</h2>
                     <div >
                         <img class="divi1 w-60 img-fluid" src="Assets/img/r6-siege-div-1.webp" alt="">
@@ -142,7 +147,9 @@
         <button type="button" class="btn btn-primary azamibutton">AZAMI</button>
     </main>
 
-    
+    <footer>
+      <p>The Starving Entrtaiment, 2022 ©</p>
+    </footer>
 
     
 
@@ -156,7 +163,7 @@
 
 
 
-
+    <script src="Js/cambiomenu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
