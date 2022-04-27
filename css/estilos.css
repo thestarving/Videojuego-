@@ -79,6 +79,7 @@ h2 {
     
     margin-top: 5%;
     background-color: rgba(0, 35, 69, 0.9);
+    
 }
 
 
@@ -91,8 +92,9 @@ h2 {
     content: "";
     position: absolute;
     margin-top: -100px;
-    margin-left: auto;
+    margin-left: 47%;
     margin-right: auto;
+    
 }
 
 .menu2 {
