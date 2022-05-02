@@ -115,6 +115,7 @@ footer {
 } 
 #demonveil {
     background-color: rgba(244, 244, 244, 0.3);
+    padding: 3%;
     
 }
 /*#rainbowmovile {
@@ -124,9 +125,9 @@ footer {
 
 .login {
     color: #000000;
-    margin-top: 17%;
-    margin-left: 27%;
-    width: 50%;
+    margin-top: 30%;
+    
+    
     background-color: rgba(244, 244, 244, 0.3);
     padding: 4%;
 }
