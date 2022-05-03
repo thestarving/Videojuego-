@@ -105,7 +105,7 @@ h2 {
 }
 
 footer {
-    margin-top: 20px;
+    margin-top: 5px;
     background-color: rgba(0, 0, 0, 0.9);
     color: #FFFFFF;
     font-size: 20px;
@@ -118,10 +118,10 @@ footer {
     padding: 3%;
     
 }
-/*#rainbowmovile {
+#rainbowmovile {
     background-color: rgba(244, 244, 244, 0.3);
 
-}*/
+}
 
 .login {
     color: #000000;
@@ -130,4 +130,30 @@ footer {
     
     background-color: rgba(244, 244, 244, 0.3);
     padding: 4%;
+}
+
+.bi {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.sociales {
+    background-color: #000000;
+}
+
+#destacados {
+    background-color: rgba(244, 244, 244, 0.3);
+    padding: 3%;
+}
+
+#botonfacebook {
+    margin-left: 25%;
+}
+
+#botonregistro {
+    margin-left: 36%;
+}
+
+.registrotitulo {
+    margin-left: 36%;
 }

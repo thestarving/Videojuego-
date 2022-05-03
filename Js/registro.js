@@ -33,4 +33,7 @@ botonregistro.addEventListener("click", function(event){
     console.log("Fallo"+errorMessage)
     // ..
     });
-})
+});
+
+
+
