@@ -4,6 +4,8 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
 //activando la rutina de registro 
 
 let botonregistro=document.getElementById("botonregistro")
+let ModalRegistro=new bootstrap.Modal(document.getElementById('mensajeInformativo'))
+let textoModal1=document.getElementById("mensajeModalInfo111")
 
 botonregistro.addEventListener("click", function(event){
     
@@ -25,12 +27,26 @@ botonregistro.addEventListener("click", function(event){
     // Signed in
     const user = userCredential.user;
     console.log("Éxito en el registro")
+    textoModal1.textContent="Éxito en el registro"
+    ModalRegistro.show()
+    let formulario=document.getElementById("formularioRegistro")
+    formulario.reset()
+    setTimeout(function(){
+        ModalRegistro.hide()
+    },2000)
     // ...
     })
     .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
     console.log("Fallo"+errorMessage)
+    textoModal1.textContent="Fallamos "+errorMessage
+    let formulario=document.getElementById("formularioRegistro")
+    formulario.reset()
+    ModalRegistro.show()
+    setTimeout(function(){
+        ModalRegistro.hide()
+    },2000)
     // ..
     });
 });
