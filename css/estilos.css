@@ -3,6 +3,7 @@ body {
     background-size: 100%;
     background-attachment: fixed;
     color: #FFFFFF;
+    overflow-x: hidden;
 }
 
 .menu{
@@ -160,4 +161,8 @@ footer {
 
 #mensajeInformativo {
     color: #000000;
+}
+
+.logingooogle{
+    font-size: 19px;
 }

@@ -34,6 +34,7 @@ botonregistro.addEventListener("click", function(event){
     setTimeout(function(){
         ModalRegistro.hide()
     },2000)
+    window.location.href="index.html"
     // ...
     })
     .catch((error) => {
