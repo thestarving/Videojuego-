@@ -19,7 +19,8 @@ onAuthStateChanged(auth, (user) => {
     const uid = user.uid;
     console.log("Usuario autenticado "+user.email)
     avatar.textContent=user.email
-    avatar.classList.remove("invisible")
+    avatar.classList.add("d-block")
+    avatar.classList.remove("d-none")
     botonlogin.classList.add("invisible")
     botontienda.classList.remove("invisible")
     botonmusica.classList.remove("invisible")
@@ -29,7 +30,8 @@ onAuthStateChanged(auth, (user) => {
 
       signOut(auth).then(() => {
         // Sign-out successful.
-        avatar.classList.add("invisible")
+        avatar.classList.add("d-none")
+        avatar.classList.remove("d-block")
         botonlogin.classList.remove("invisible")
         botontienda.classList.add("invisible")
         botonmusica.classList.add("invisible")
