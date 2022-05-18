@@ -7,6 +7,9 @@ let avatar=document.getElementById("username")
 let botonsalir=document.getElementById("botonsalir")
 let botonlogin=document.getElementById("btnlogin")
 
+let botontienda=document.getElementById("tienda")
+let botonmusica=document.getElementById("musica")
+
 
 const auth = getAuth();
 onAuthStateChanged(auth, (user) => {
@@ -18,6 +21,8 @@ onAuthStateChanged(auth, (user) => {
     avatar.textContent=user.email
     avatar.classList.remove("invisible")
     botonlogin.classList.add("invisible")
+    botontienda.classList.remove("invisible")
+    botonmusica.classList.remove("invisible")
 
     //Rutina de salida
     botonsalir.addEventListener("click", function(evento){
@@ -26,6 +31,8 @@ onAuthStateChanged(auth, (user) => {
         // Sign-out successful.
         avatar.classList.add("invisible")
         botonlogin.classList.remove("invisible")
+        botontienda.classList.add("invisible")
+        botonmusica.classList.add("invisible")
         window.location=href="index.html"
 
       }).catch((error) => {
