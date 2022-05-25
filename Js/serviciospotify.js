@@ -4,7 +4,7 @@
 const URI='https://api.spotify.com/v1/albums/3GsMRN0kkCeLDo0Fgi75wh/tracks?market=US&limit=10&offset=5'
 
 //2. Configuro la petición 
-const TOKEN='Bearer BQB3Jn2Wx_XqCtRQIlsCNQynqupbTDExXcQzfPYgSWUj960Xa8AUYdI2c7_PGREVfxPlnHnUaoLtnx40TjyLbelzJIXmPU8DkHD0-e5b8oMAtAux1VHNGAl8pqmepO1oVjDKOR8RQBuZBaIovz3D0EBlnXNZ99WR6y4'
+const TOKEN='Bearer BQDDA682Y2bCsK7MYYupmAMkITRqOSKY7KNXE9BV2DpZGDfBG9_bbxLVwi92iyGFF5L5noDLTIJK53_wjcekeYlRfWK5RwXkdBl13nNCQri3_eoB8LEwu7PqMmPLOV1T5d8MuqKQLLsX3tkQRld7ORo80ZpaDw3PUrk'
 
 const PETICION={
     method:"GET", 
@@ -50,7 +50,7 @@ fetch(URI,PETICION)
 
         let numero=document.createElement("p")
         numero.classList.add("text-center")
-        numero.textContent=cancion.track_number
+        numero.textContent="Track Number: "+cancion.track_number
 
 
         //Padres e hijos 
