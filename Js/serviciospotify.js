@@ -4,7 +4,7 @@
 const URI='https://api.spotify.com/v1/albums/3GsMRN0kkCeLDo0Fgi75wh/tracks?market=US&limit=10&offset=5'
 
 //2. Configuro la petición 
-const TOKEN='Bearer BQA0HL6JBNafsP8-KnlZwKCa9uPS9qb6_hvZLvRHvu00wdcIXbdWNISs3ZBiEio3zz4Zv3gaSlILeTmZXTx-26looZaJZ4PBYzUERpWwNrtVBzkV1gfNJh2ALgB3iOdSN_rrTO87MhtCZVP-cY3nwI9tb9e3uIIXE58'
+const TOKEN='Bearer BQB3Jn2Wx_XqCtRQIlsCNQynqupbTDExXcQzfPYgSWUj960Xa8AUYdI2c7_PGREVfxPlnHnUaoLtnx40TjyLbelzJIXmPU8DkHD0-e5b8oMAtAux1VHNGAl8pqmepO1oVjDKOR8RQBuZBaIovz3D0EBlnXNZ99WR6y4'
 
 const PETICION={
     method:"GET", 
@@ -21,8 +21,45 @@ fetch(URI,PETICION)
     //Respuesta de spotify server 
     console.log(respuesta.items)
     //recorriendo el arreglo 
+    
+    let fila=document.getElementById("fila")
+
     respuesta.items.forEach(function(cancion){
         console.log(cancion.preview_url)
+
+
+        //Traversing
+        let columna=document.createElement("div")
+        columna.classList.add("col")
+
+        let tarjeta=document.createElement("div")
+        tarjeta.classList.add("card","h-100","shadow")
+
+        let audio=document.createElement("audio")
+        audio.classList.add("w-100")
+        audio.setAttribute("controls","controls")
+        audio.src=cancion.preview_url
+
+        let nombre=document.createElement("p")
+        nombre.classList.add("text-center")
+        nombre.textContent=cancion.name
+
+        let foto=document.createElement("img")
+        foto.classList.add("w-100","img-fluid")
+        foto.src="https://firebasestorage.googleapis.com/v0/b/thestarvingvideojuego-9dd2b.appspot.com/o/fondobso.jpg?alt=media&token=322e1316-9372-47b9-81e9-af187ca85b21"
+
+        let numero=document.createElement("p")
+        numero.classList.add("text-center")
+        numero.textContent=cancion.track_number
+
+
+        //Padres e hijos 
+        tarjeta.appendChild(nombre)
+        tarjeta.appendChild(foto)
+        tarjeta.appendChild(numero)
+        tarjeta.appendChild(audio)
+        columna.appendChild(tarjeta)
+        fila.appendChild(columna)
     })
 })
 .catch(function(respuesta){
