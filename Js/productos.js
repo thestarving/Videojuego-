@@ -26,7 +26,7 @@ productosBD.forEach(function(producto){
     console.log(producto)
 
     let columna=document.createElement("div")
-    columna.classList.add("col")
+    columna.classList.add("col","mt-4")
 
     let tarjeta=document.createElement("div")
     tarjeta.classList.add("card")

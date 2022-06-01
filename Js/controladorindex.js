@@ -36,7 +36,8 @@ onAuthStateChanged(auth, (user) => {
         botonlogin.classList.remove("invisible")
         botontienda.classList.add("invisible")
         botonmusica.classList.add("invisible")
-        window.location=href="index.html"
+        console.log("saliendo")
+        window.location.href="index.html"
 
       }).catch((error) => {
         // An error happened.
