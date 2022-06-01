@@ -1,46 +1,11 @@
-//1. URI (Para dónde voy?)
+export function pintarCanciones(canciones){
 
-const URI="https://accounts.spotify.com/api/token"
-
-//2. Almaceno los datos que voy a enviar 
-
-let dato1='client_id=373335a1289f49f3b6759bcbc71cb7a2'
-let dato2='client_secret=7f4eab375c4b4ef7955c56a3744f3b26'
-let dato3='grant_type=client_credentials'
-
-//3. Configuro la petición 
-const PETICION={
-    method:"POST",
-    headers:{
-        "Content-type":"application/x-www-form-urlencoded"
-    },
-    body:dato1+'&'+dato2+'&'+dato3
-}
-
-//4. Consumir el servicio
-export async function generarToken(){
-    
-    let respuesta= await fetch(URI,PETICION)
-    return(respuesta.json())
-}
-
-/*/3. Intento consumir el API
-fetch(URI,PETICION)
-.then(function(respuesta){
-    return (respuesta.json())
-})
-.then(function(respuesta){
-    console.log(respuesta)
-    //Respuesta de spotify server 
-    console.log(respuesta.items)
-    //recorriendo el arreglo 
-    
     let fila=document.getElementById("fila")
 
-    respuesta.items.forEach(function(cancion){
+    canciones.items.forEach(function(cancion){
         console.log(cancion.preview_url)
 
-
+        
         //Traversing
         let columna=document.createElement("div")
         columna.classList.add("col")
@@ -74,7 +39,4 @@ fetch(URI,PETICION)
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
     })
-})
-.catch(function(respuesta){
-    console.log(respuesta)
-})*/
+}
