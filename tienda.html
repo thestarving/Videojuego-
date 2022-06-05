@@ -29,13 +29,19 @@
                     <a class="nav-link active" aria-current="page" href="#">Info del Juego</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Acerca de</a>
+                    <a class="nav-link active" aria-current="page" href="acercade.html">Acerca de</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active invisible" aria-current="page" id="tienda" href="tienda.html">Tienda</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active invisible" aria-current="page" id="musica" href="musica.html">Biblioteca Musical</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" id="verCarrito"><i class="bi bi-cart3 icono"></i>
+                      <span id="capsula" class="position-absolute top-10 start-10 translate-middle badge rounded-pill bg-primary invisible">
+                      99+
+                    </span></a>
                   </li>
                 </ul>
                 <ul class="navbar-nav mb-2 mb-lg-0">
@@ -58,6 +64,7 @@
             </div>
           </nav>
     </header>
+
     <main>
       <div class="container" >
           <div class="row row-cols-1 row-cols-md-4 g-4 mt-4" id="fila" style="color: #000000 ;">
@@ -66,12 +73,78 @@
       </div>
   </main>
 
+  <section>
+    <!--Modal-->
+    <div class="modal fade" id="modalInfo" style="color: #000000;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" >Tienda Rainbow Six</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-4">
+                  <img src="" alt="" class="w-100 img-fluid" id="foto">
+                </div>
+                <div class="col-8">
+                  <h4 class="text-center" id="titulo"></h4>
+                  <h5 class="text-center" id="precio"></h5>
+                  <div class="mb-3">
+                    <label class="form-label">Cantidad:</label>
+                    <input type="number" class="form-control" id="cantidadProducto" min="1">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="botonLimpiar" >Limpiar</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" id="botonAdd">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <!-- Modal -->
+    <div class="modal fade" id="resumenCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="color: #000000;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">TIENDA RAINBOW SIX</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container" id="baseCarrito">
+              
+            </div>
+          </div>
+          <div class="modal-footer">
+            <h5 id="subtotal" ></h5>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Comprar</button>
+          </div>
+          <div class="modal-footer">
+            <h5 id="convertir" ></h5>
+            <button type="button" class="btn btn-primary" id="convertidor">Convertir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
   <footer>
     <p>The Starving Entertaiment, 2022 ©</p>
   </footer>
 
     <script src="Js/cambiomenu.js"></script>
-    <script src="Js/productos.js"></script>
+    <script src="Js/productos.js" type="module"></script>
     <script src="Js/firebase.js" type="module"></script>
     <script src="Js/controladorindex.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
